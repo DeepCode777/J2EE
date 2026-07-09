@@ -28,7 +28,7 @@ public class preparedStmt {
 			//The pstmt is way to run query by using user input
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 
-			//The pstmt contains (?) and called 
+			//The pstmt contains (?) and called parameter marker
 			//The value of (?) is given by pstmt.setXXX(sequenceNum, value);
 			String sname = "ashish";
 			pstmt.setString(1, sname); // 1 --> sequenceNum, sname --> value
