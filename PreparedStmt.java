@@ -33,7 +33,8 @@ public class preparedStmt {
 			String sname = "ashish";
 			pstmt.setString(1, sname); // 1 --> sequenceNum, sname --> value
 			//The (?) works in sequence like if there is three (?,?,?) so the value will be given in squence as well
-			
+			//example :- (?,?,?) --> setInt(1,val) , setInt(2,val) , setInt(3,val)
+
 			//Used to fetch rows from table based on query
 			ResultSet rs2 = pstmt.executeQuery();
 			
