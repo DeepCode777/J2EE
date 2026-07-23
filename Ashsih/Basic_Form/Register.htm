@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+}
+
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	width: 30rem;
+	padding: 2rem 2rem;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.256);
+	border: gray solid 1px;
+}
+
+.main:hover {
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.377);
+}
+
+h3 {
+	font-size: x-large;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 0.8rem;
+}
+
+.form-control {
+	padding-left: 8px;
+	height: 2rem;
+	border-radius: 5px;
+	border: 1px solid gray
+}
+
+.form-control:hover {
+	border: 1px solid black;
+}
+
+.btn {
+	width: 100%;
+	color: white;
+	background-color: rgba(0, 0, 255, 0.732);
+	border-radius: 5px;
+	font-size: large;
+	margin-top: 1rem;
+	padding: 0.3rem 0;
+}
+
+.btn:hover {
+	background-color: rgba(0, 0, 255, 0.819);
+}
+</style>
+</head>
+
+<body class="container">
+	<div class="main">
+		<h3>Register Form</h3>
+		<form action="display" method="get">
+			<div class="flex-col">
+				<label for="username">Username</label> <input class="form-control"
+					type="text" name="username" id="username">
+			</div>
+			<div class="flex-col">
+				<label for="password">Password</label> <input class="form-control"
+					type="password" name="password" id="password">
+			</div>
+			<div class="flex-col">
+				<label for="country">Country</label> <select class="form-control"
+					name="country" id="country">
+					<option value="India">India</option>
+					<option value="America">America</option>
+					<option value="Japan">Japan</option>
+					<option value="Iran">Iran</option>
+					<option value="Paris">Paris</option>
+				</select>
+			</div>
+			<div class="flex-col">
+				<label for="avatar">Avatar</label> <input class="form-control"
+					type="file" name="avatar" id="avatar">
+			</div>
+
+			<button class="btn">Submit</button>
+		</form>
+
+	</div>
+</body>
+
+</html>
