@@ -1,0 +1,13 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>Display</servlet-name>
+        <servlet-class>com.servletdemo.show</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Display</servlet-name>
+        <url-pattern>/messege</url-pattern>
+    </servlet-mapping>
+
+</web-app>
