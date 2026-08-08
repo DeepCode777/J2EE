@@ -1,0 +1,13 @@
+<web-app>
+
+  <servlet>
+    <servlet-name>Display</servlet-name>
+    <servlet-class>form</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Display</servlet-name>
+    <url-pattern>/registration_form</url-pattern>
+  </servlet-mapping>
+
+</web-app>
