@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h3{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    input{
+        padding : 4px 5px;
+        margin-bottom: 3px;
+    }
+    form{
+        border : 1px solid gray;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.231);
+    }
+    label{
+        display: inline-block;
+        width: 6rem;
+    }
+    button{
+        width: 100%;
+        margin-top: 0.6rem;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 255, 0.879);
+        color : white;
+        border: 1px solid gray;
+    }
+    .special{
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <form action="cookie" method="get">
+            <h3>Login</h3>
+            <div>
+                <label for="username">username</label>
+                <input type="username" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            
+              <div class="special">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
