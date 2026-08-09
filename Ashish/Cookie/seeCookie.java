@@ -24,8 +24,6 @@ public class seeCookie extends HttpServlet{
 		}else {
 			out.print("Cookies Not Found");
 		}
-		
-				
 	}
 }
 
