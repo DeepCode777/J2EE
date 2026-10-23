@@ -1,12 +1,6 @@
-
-
-
 public class Employee{
-
-   
     private int id;
 
-    
     private String fullName;
 
     private String department;
