@@ -63,9 +63,11 @@ public class registerServlet extends HttpServlet {
 				if (i > 0) {
 					HttpSession session = request.getSession(true);
 					session.setAttribute("fullName", userFullName);
-					response.sendRedirect("dashboard");
+					out.print("<h2><center>Register Succsessfully</h2></center>");
+					out.print("<h3><center>Welcome "+userFullName+"</h3></center>");
+					request.getRequestDispatcher("login.html").include(request, response);
 				} else {
-					response.sendRedirect("login.html");
+					response.sendRedirect("register.html");
 				}
 			}
 			con.close();
