@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "../hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="Employee" table="Employee">
+		<id name="id">
+		<generator class="assigned"></generator>
+		</id>
+		<property name="fullName"></property>
+		<property name="department"></property>
+	</class>
+</hibernate-mapping>
